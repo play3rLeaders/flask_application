@@ -1,0 +1,26 @@
+{"user_1": {"points" : 3459,
+            "badges": {"topPlay3r": 1,
+                    "mediumPlay3r": 1, 
+                    "smallPlay3r": 1}
+}, 
+"user_2": {"points" : 10300000,
+            "badges": {"topPlay3r": 1,
+                     "mediumPlay3r": 1, 
+                     "smallPlay3r": 1}
+}, 
+"user_3": {"points" : 150000,
+            "badges": {"topPlay3r": 1,
+                     "mediumPlay3r": 1, 
+                     "smallPlay3r": 1}
+},
+"user_4": {"points" : 130,
+            "badges": {"topPlay3r": 1,
+                     "mediumPlay3r": 1, 
+                     "smallPlay3r": 1}
+},
+"user_5": {"points" : 154000,
+            "badges": {"topPlay3r": 1,
+                     "mediumPlay3r": 1, 
+                     "smallPlay3r": 1}
+}
+}

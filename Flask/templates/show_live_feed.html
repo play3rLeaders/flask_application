@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<!-- <script>
+    // Function to update the live feed
+    function updateLiveFeed() {
+        var liveFeed = document.getElementById('live-feed');
+        liveFeed.innerHTML = '<img src="/video_feed" />';
+    }
+
+    // Call the updateLiveFeed function every second (adjust the interval as needed)
+    setInterval(updateLiveFeed, 1000);
+</script> -->
+
+{% endblock %}
+
+{% block body %}
+<h1>Live Camera Feed</h1>
+<iframe src="/video_feed" width="640" height="480" frameborder="0"></iframe>
+<script>
+    var video = document.getElementById("video");
+    var source = new EventSource("/video_feed");
+    source.onmessage = function(event) {
+        video.src = "data:image/jpeg;base64," + event.data;
+    };
+</script>
+{% endblock %}

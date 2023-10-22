@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head %}
+
+<title>Live Leaderboard</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        setInterval(function(){
+            $("#leaderboard").load(window.location.href + " #leaderboard");
+        }, 5000);  // Refresh every 5 seconds
+    });
+</script>
+
+{% endblock %}
+
+{% block body %}
+<div id="leaderboard">
+    <img src="data:image/png;base64,{{ plot_url }}" />
+</div>
+{% endblock %}
